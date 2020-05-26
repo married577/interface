@@ -1,4 +1,4 @@
-from MySqlHelper import *
+from common.MySqlHelper import *
 import json
 
 conn = pymysql.connect(host='47.105.104.233', user='root', passwd='root', db='student_sys', port=3306,
@@ -21,7 +21,7 @@ def data_check():
     return data_aaa, data_bbb
 
 
-def data_delete():  # Êı¾İÇåÏ´
+def data_delete():  # ÃŠÃ½Â¾ÃÃ‡Ã¥ÃÂ´
     cur.execute("DELETE FROM server_school WHERE server_school.server = '123'")
     conn.commit()
     conn.close()
