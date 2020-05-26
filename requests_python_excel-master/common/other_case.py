@@ -6,7 +6,7 @@ from openpyxl import load_workbook
 
 # 取token并填入headers
 url2 = 'http://student-manage-test.lxhelper.com/api/v1/user_info/login/'
-body2 = {"username": "admin", "password": "fc76c4a86c56becc717a88f651264622"}
+body2 = {"username": "admin", "password": "13321"}
 r2 = requests.post(url=url2, data=body2)
 login_token = r2.headers['token']
 header2 = {"Content-Type": "application/json", "token": login_token}
