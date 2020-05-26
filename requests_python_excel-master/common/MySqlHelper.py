@@ -1,4 +1,4 @@
-import pymysql
+import common.pymysql
 
 
 class MysqlHelper():
