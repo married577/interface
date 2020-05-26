@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/auto_inter/menthod" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/auto_inter/handler" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/auto_inter" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lepos" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lepos/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/interfaceTest" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/prodemo" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/my_rf" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/p22naf/tool" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/p22naf" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/p22naf/operation_data" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/p22naf/base" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/p22naf/dataconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/p22naf/main" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FreeTestGo-master" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ApiTestFrameWork-master" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/jiekou-python3-master" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/InterfaceTest-master" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/InterfaceTest-master/base" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/InterfaceTest-master/data" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/requests_python_excel-master" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/requests_python_excel-master/case" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/requests_python_excel-master/common" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/requests_python_excel-master/report" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/venv" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="TestRunnerService">
+    <option name="PROJECT_TEST_RUNNER" value="Unittests" />
+  </component>
+</module>
