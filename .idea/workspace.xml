@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe801384-fefc-4d16-9470-fa283665e5c4" name="Default Changelist" comment="log新增">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requests_python_excel-master/common/log.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requests_python_excel-master/logco/2020060313.log" afterDir="false" />
-    </list>
+    <list default="true" id="fe801384-fefc-4d16-9470-fa283665e5c4" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +100,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591162765594</updated>
-      <workItem from="1591162766672" duration="3283000" />
+      <workItem from="1591162766672" duration="3414000" />
     </task>
     <task id="LOCAL-00001" summary="log新增">
       <created>1591163084996</created>
@@ -115,11 +109,18 @@
       <option name="project" value="LOCAL" />
       <updated>1591163084996</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="log新增">
+      <created>1591166070203</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1591166070203</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3283000" />
+    <option name="totallyTimeSpent" value="3414000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
