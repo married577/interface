@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="stu_api">
+    <serverData>
+      <paths name="stu_api">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/var/jenkins_home/workspace/stu_api/requests_python_excel-master" local="E:/git_zip/interface-master/requests_python_excel-master" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
