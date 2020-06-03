@@ -10,7 +10,7 @@ class log_message():
         title = u'学生系统接口测试'
         day = time.strftime("%Y%m%d%H", time.localtime(time.time()))
         pad = os.getcwd()
-        file_dir = pad + '\\logco'
+        file_dir = pad + '/logco'
         file = os.path.join(file_dir, (day + '.log'))
         self.logger = logging.Logger(title)
         self.logger.setLevel(logging.INFO)
