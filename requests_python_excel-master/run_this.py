@@ -3,8 +3,10 @@ import unittest
 from common import database
 from common import HTMLTestRunner_api
 from common import other_case
+from common import log
 import os
 
+logs = log.log_message()
 
 curpath = os.path.dirname(os.path.realpath(__file__))
 report_path = os.path.join(curpath, "report")
@@ -23,7 +25,7 @@ def add_case(casepath=case_path, rule="test*.py"):
 def run_case(all_case, reportpath=report_path):
     '''执行所有的用例, 并把结果写入测试报告'''
     htmlreport = reportpath+r"\result.html"
-    print("测试报告生成地址：%s" % htmlreport)
+    logs.info_log("测试报告生成地址：%s" % htmlreport)
     fp = open(htmlreport, "wb")
     runner = HTMLTestRunner_api.HTMLTestRunner(stream=fp, verbosity=2, title="测试报告", description="用例执行情况")
 

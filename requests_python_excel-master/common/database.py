@@ -21,7 +21,7 @@ def data_check():
     return data_aaa, data_bbb
 
 
-def data_delete():  # ÃŠÃ½Â¾ÃÃ‡Ã¥ÃÂ´
+def data_delete():  # Êı¾İÇåÏ´
     cur.execute("DELETE FROM server_school WHERE server_school.server = '123'")
     conn.commit()
     conn.close()

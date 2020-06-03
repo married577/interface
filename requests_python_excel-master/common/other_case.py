@@ -3,10 +3,11 @@ import requests
 import json
 from common import database
 from openpyxl import load_workbook
+from common import log
 
 # 取token并填入headers
 url2 = 'http://student-manage-test.lxhelper.com/api/v1/user_info/login/'
-body2 = {"username": "admin", "password": "13321"}
+body2 = {"username": "admin", "password": "fc76c4a86c56becc717a88f651264622"}
 r2 = requests.post(url=url2, data=body2)
 login_token = r2.headers['token']
 header2 = {"Content-Type": "application/json", "token": login_token}
@@ -28,6 +29,7 @@ def excle_save():
 
 # 可以写其他需要参数传递的接口
 def student_info():
+    logs = log.log_message()
     url = 'http://student-manage-test.lxhelper.com/api/v1/student/server_school/'
     body = {"server": "123", "school": "456", "e_school": "789"}
     r = requests.post(url=url, data=json.dumps(body), headers=header2)
@@ -45,9 +47,9 @@ def student_info():
     check_student_info = '{"code":0,"msg":"请求成功","data":{"id":%s,"server":"123","school":"456","e_school":"789"' \
                          ',"create_time":"%s"},"field_name":""}' % (newdata_list[0][1], create_time)
     if check_student_info == r_result:
-        print('pass')
+        logs.info_log("student_info接口,测试通过")
     else:
-        print('fail')
+        logs.info_log("student_info接口,测试不通过")
 
 
 # case2

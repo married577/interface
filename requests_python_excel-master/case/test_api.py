@@ -6,6 +6,9 @@ import requests
 from common import base_api
 from common import readexcel
 from common import writeexcel
+from common import log
+
+logs = log.log_message()
 
 # 获取demo_api.xlsx路径
 curpath = os.path.dirname(os.path.realpath(__file__))
@@ -33,10 +36,10 @@ class Test_api(unittest.TestCase):
         base_api.wirte_result(res, filename=reportxlsx)
         # 检查点 checkpoint
         check = data["checkpoint"]
-        print("检查点->：%s" % check)
+        logs.info_log("检查点->：%s" % check)
         # 返回结果
         res_text = res["text"]
-        print("返回实际结果->：%s" % res_text)
+        logs.info_log("返回实际结果->：%s" % res_text)
         # 断言
         self.assertTrue(check in res_text)
 

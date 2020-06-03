@@ -4,9 +4,11 @@ import requests
 from common.readexcel import ExcelUtil
 from common.writeexcel import copy_excel, Write_excel
 from common.other_case import excle_save
+from common import log
 
 # 从登录返回数据中取token并填入excle的headers中
 excle_save()
+logs = log.log_message()
 
 
 def send_requests(s, testdata):
@@ -24,18 +26,18 @@ def send_requests(s, testdata):
     type = testdata["type"]
 
     test_nub = testdata['id']
-    print("*******正在执行用例：-----  %s  ----**********" % test_nub)
+    logs.info_log("*******正在执行用例：-----  %s  ----**********" % test_nub)
 
     # 请求头部headers
     try:
         headers = eval(testdata["headers"])
-        print("请求头部：%s" % headers)
+        logs.info_log("请求头部：%s" % headers)
     except:
         headers = None
-        print("请求头部：%s" % headers)
+        logs.info_log("请求头部：%s" % headers)
 
-    print("请求方式：%s" % method)
-    print("请求url： %s" % url)
+    logs.info_log("请求方式：%s" % method)
+    logs.info_log("请求url： %s" % url)
 
     # post请求body内容
     try:
@@ -51,18 +53,18 @@ def send_requests(s, testdata):
     else:
         body = bodydata
     if method == "post":
-        print("post请求的body类型为：%s" % type)
-        print("post请求的body内容为：%s" % body)
+        logs.info_log("post请求的body类型为：%s" % type)
+        logs.info_log("post请求的body内容为：%s" % body)
     elif method == "get":
-        print("get请求的params类型为：%s" % type)
-        print("get请求的params内容为：%s" % params)
+        logs.info_log("get请求的params类型为：%s" % type)
+        logs.info_log("get请求的params内容为：%s" % params)
 
     verify = False
     res = {}   # 接受返回数据
 
     try:
         r = s.request(method=method, url=url, params=params, headers=headers, data=body, verify=verify)
-        print("页面返回信息：%s" % r.content.decode("utf-8"))
+        logs.info_log("页面返回信息：%s" % r.content.decode("utf-8"))
         res['id'] = testdata['id']
         res['rowNum'] = testdata['rowNum']
 
@@ -80,7 +82,7 @@ def send_requests(s, testdata):
         res["msg"] = ""
         if testdata["checkpoint"] in res["text"]:
             res["result"] = "pass"
-            print("用例测试结果:   %s---->%s" % (test_nub, res["result"]))
+            logs.info_log("用例测试结果:   %s---->%s" % (test_nub, res["result"]))
         else:
             res["result"] = "fail"
         return res
