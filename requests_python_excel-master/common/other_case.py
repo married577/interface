@@ -15,7 +15,7 @@ header2 = {"Content-Type": "application/json", "token": login_token}
 
 # 将headers填入excle
 def excle_save():
-    wb = load_workbook("E:\\git_zip\\interface-master\\requests_python_excel-master\\case\\demo_api.xlsx")
+    wb = load_workbook("/var/jenkins_home/workspace/stu_api/requests_python_excel-master/case/demo_api.xlsx")
     wb_new = wb.active
     a = 1
     xl_sheet_names = wb.get_sheet_names()
@@ -24,7 +24,7 @@ def excle_save():
     while a < row:
         a += 1
         wb_new.cell(a, 5, str(header2))
-        wb.save("E:\\git_zip\\interface-master\\requests_python_excel-master\\case\\demo_api.xlsx")
+        wb.save("/var/jenkins_home/workspace/stu_api/requests_python_excel-master/case/demo_api.xlsx")
 
 
 # 可以写其他需要参数传递的接口
